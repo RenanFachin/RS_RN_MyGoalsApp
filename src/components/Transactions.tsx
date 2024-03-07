@@ -20,6 +20,7 @@ export function Transactions({ transactions }: Props) {
         renderItem={({ item }) => <Transaction transaction={item} />}
         contentContainerClassName="py-6 gap-4"
         showsVerticalScrollIndicator={false}
+        // ListEmptyComponent -> renderiza um componente quando a lista for vazia
         ListEmptyComponent={() => (
           <Text className="text-gray-300 font-regular text-sm">
             Nenhuma transação registrada ainda.

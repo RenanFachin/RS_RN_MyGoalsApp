@@ -1,24 +1,8 @@
 <h1 align="center">
-  <img width="100%" alt="Banner" title="Banner" src=".github/banner.png" />
-</h1>
-
-### Links
-
-🔴 **Assista meus vídeos no YouTube:** [@orodrigogo](https://www.youtube.com/@orodrigogo)
-
-🔴 **Figma do projeto:** [MyGoals App](https://www.figma.com/community/file/1346604660147063430)
-
----
-
-<h1 align="center">
   <img width="100%" alt="Banner" title="App" src=".github/app.png" />
 </h1>
 
-### Sobre o projeto
+# Sobre o projeto
 
-Imagine que Rodrigo deseja comprar um Notebook novo que custa R$ 5.000,00. Ele acha prudente poupar o dinheiro necessário para comprar à vista, conseguir um bom preço e não comprometer o orçamento com parcelas.
-Por isso, pode usar esse App Minhas Metas para poupar até atingir sua meta financeira para adquirir um Notebook novo. Esse é um dos projetos desenvolvidos em aula do evento React Native na Prática.
-
-
-### Dica para usar esse repositório
-Na branch `main` você irá encontrar somente as interfaces do App. Na branch `finished` você irá encontrar o código completo do App pronto com as funcionalidades implementadas.
+Considere o cenário em onde uma pessoa deseja adquirir um novo notebook, avaliado em R$ 5.000,00. Com a intenção de realizar a compra à vista, obter um preço vantajoso e não comprometer o orçamento com parcelamentos, ele opta por utilizar o aplicativo **MyGoals**. 
+Este app permite que ele poupe gradualmente até alcançar sua meta financeira para aquisição do notebook, sendo este um dos projetos abordados durante as aulas do evento prático de React Native.

@@ -1,5 +1,4 @@
 import dayjs from "dayjs"
-import { currencyFormat } from "./currencyFormat"
 
 const transactions = [
   {
@@ -22,6 +21,7 @@ const goal = {
   percentage: (2500 / 3000) * 100,
   transactions,
 }
+
 
 const goals = [goal]
 

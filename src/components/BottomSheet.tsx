@@ -12,6 +12,7 @@ export type Props = {
   snapPoints: number[]
 }
 
+// forwardRef é necessário em função do ref passado para o BottomSheet
 export const BottomSheet = forwardRef<Bottom, Props>(
   ({ onClose, children, snapPoints, title }, ref) => {
     return (

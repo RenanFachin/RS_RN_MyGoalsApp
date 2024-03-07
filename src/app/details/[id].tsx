@@ -36,8 +36,8 @@ export default function Details() {
   const [goal, setGoal] = useState<Details>({} as Details)
 
   // PARAMS
-  const routeParams = useLocalSearchParams()
-  const goalId = Number(routeParams.id)
+  const routeParams = useLocalSearchParams() // Obtendo o id da meta (vem como string)
+  const goalId = Number(routeParams.id) // Convertendo para number
 
   // BOTTOM SHEET
   const bottomSheetRef = useRef<Bottom>(null)
@@ -110,7 +110,10 @@ export default function Details() {
     <View className="flex-1 p-8 pt-12">
       <BackButton />
 
-      <Header title={goal.name} subtitle={`${goal.current} de ${goal.total}`} />
+      <Header
+        title={goal.name}
+        subtitle={`${goal.current} de ${goal.total}`}
+      />
 
       <Progress percentage={goal.percentage} />
 

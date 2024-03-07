@@ -15,6 +15,7 @@ import {
 
 import { colors } from "@/styles/colors"
 
+// Previne o comportamento padrão de sumir a splashScreen -> Motivo: Podermos manipular a splash para aguardar o carregamento das fontes
 SplashScreen.preventAutoHideAsync()
 
 export default function Layout() {
@@ -25,6 +26,7 @@ export default function Layout() {
   })
 
   if (fontsLoaded) {
+    // Assim que houver o carregamento das fontes, sumir com a splash
     SplashScreen.hideAsync()
   } else {
     return

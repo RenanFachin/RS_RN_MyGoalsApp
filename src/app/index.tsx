@@ -100,9 +100,11 @@ export default function Home() {
 
       <Transactions transactions={transactions} />
 
+      {/* Modal */}
       <BottomSheet
         ref={bottomSheetRef}
         title="Nova meta"
+        // 0.01 é quando ele está fechado, 284 é qndo aberto
         snapPoints={[0.01, 284]}
         onClose={handleBottomSheetClose}
       >
