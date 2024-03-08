@@ -18,7 +18,7 @@ export function useGoalRepository() {
   function create(goal: GoalCreateDatabase) {
     try {
       const statement = database.prepareSync(
-        "INSET INTO goals (name, total) VALUES ($name, $total)"
+        "INSERT INTO goals (name, total) VALUES ($name, $total)"
       )
 
       statement.executeSync({
@@ -33,10 +33,10 @@ export function useGoalRepository() {
   function listAll() {
     try {
       return database.getAllAsync<GoalResponseDatabase>(`
-        SELECT g.id, g.name, g.total, COALESCE(SUM(t.amount), 0) AS current
-        FROM goals AS g
-        LEFT JOIN transactions t ON t.goal_id = g.id
-        GROUP BY g.id, g.name, g.total;
+      SELECT g.id, g.name, g.total, COALESCE(SUM(t.amount), 0) AS current
+      FROM goals AS g
+      LEFT JOIN transactions t ON t.goal_id = g.id
+      GROUP BY g.id, g.name, g.total;
       `)
     } catch (error) {
       throw error
