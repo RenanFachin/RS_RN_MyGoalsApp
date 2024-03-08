@@ -21,9 +21,11 @@ export function Transaction({ transaction, ...rest }: Props) {
       <Text
         className="font-regular text-sm"
         style={{
+          // Estilo com condicional
           color: transaction.amount < 0 ? colors.red[500] : colors.green[500],
         }}
       >
+        {/* Adicionando o + ou - conforme o tipo de operação */}
         {transaction.amount < 0 ? "- " : "+ "}
         {currencyFormat(transaction.amount).replace("-", "")}
       </Text>
